@@ -5,7 +5,7 @@ Bot creado como prueba
 """
 # Obtenemos credenciales de nuestro config.conf
 cp = configparser.ConfigParser()
-cp.read('./config.conf')
+cp.read('../config.conf')
 bot = telebot.TeleBot(cp['AUTH']['bot_token'])
 
 @bot.message_handler(commands = ['start', 'help'])
